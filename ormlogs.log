@@ -1,0 +1,283 @@
+[2022-09-16T07:37:38.641Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-09-16T07:37:38.679Z][QUERY]: CREATE TABLE `migrations` (`id` int NOT NULL AUTO_INCREMENT, `timestamp` bigint NOT NULL, `name` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-16T07:37:38.729Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations` ORDER BY `id` DESC
+[2022-09-16T07:37:38.738Z]0 migrations are already loaded in the database.
+[2022-09-16T07:37:38.738Z]3 migrations were found in the source code.
+[2022-09-16T07:37:38.738Z]3 migrations are new migrations that needs to be executed.
+[2022-09-16T07:37:38.738Z][QUERY]: START TRANSACTION
+[2022-09-16T07:37:38.739Z][QUERY]: CREATE TABLE "article" ("id" SERIAL NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_40808690eb7b915046558c0f81b" PRIMARY KEY ("id"))
+[2022-09-16T07:37:38.739Z][FAILED QUERY]: CREATE TABLE "article" ("id" SERIAL NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_40808690eb7b915046558c0f81b" PRIMARY KEY ("id"))
+[2022-09-16T07:37:38.739Z][QUERY ERROR]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"article" ("id" SERIAL NOT NULL, "name" character varying NOT NULL, CONSTRAINT "' at line 1
+[2022-09-16T07:37:38.739Z]Migration "addingArticleMigration1558196824347" failed, error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"article" ("id" SERIAL NOT NULL, "name" character varying NOT NULL, CONSTRAINT "' at line 1
+[2022-09-16T07:37:38.739Z][QUERY]: ROLLBACK
+[2022-09-16T07:49:19.937Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-09-16T07:49:19.944Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations` ORDER BY `id` DESC
+[2022-09-16T07:49:19.945Z]0 migrations are already loaded in the database.
+[2022-09-16T07:49:19.945Z]2 migrations were found in the source code.
+[2022-09-16T07:49:19.945Z]2 migrations are new migrations that needs to be executed.
+[2022-09-16T07:49:19.945Z][QUERY]: START TRANSACTION
+[2022-09-16T07:49:19.946Z][QUERY]: CREATE TABLE `article` (`id` number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-16T07:49:19.947Z][FAILED QUERY]: CREATE TABLE `article` (`id` number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-16T07:49:19.947Z][QUERY ERROR]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB' at line 1
+[2022-09-16T07:49:19.947Z]Migration "addingArticleMigration1558196824347" failed, error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB' at line 1
+[2022-09-16T07:49:19.947Z][QUERY]: ROLLBACK
+[2022-09-16T07:50:29.714Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-09-16T07:50:29.727Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations` ORDER BY `id` DESC
+[2022-09-16T07:50:29.728Z]0 migrations are already loaded in the database.
+[2022-09-16T07:50:29.728Z]2 migrations were found in the source code.
+[2022-09-16T07:50:29.728Z]2 migrations are new migrations that needs to be executed.
+[2022-09-16T07:50:29.729Z][QUERY]: START TRANSACTION
+[2022-09-16T07:50:29.730Z][QUERY]: CREATE TABLE `article` (`id` number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-16T07:50:29.730Z][FAILED QUERY]: CREATE TABLE `article` (`id` number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-16T07:50:29.730Z][QUERY ERROR]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB' at line 1
+[2022-09-16T07:50:29.730Z]Migration "addingArticleMigration1558196824347" failed, error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB' at line 1
+[2022-09-16T07:50:29.730Z][QUERY]: ROLLBACK
+[2022-09-16T07:51:02.188Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-09-16T07:51:02.199Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations` ORDER BY `id` DESC
+[2022-09-16T07:51:02.200Z]0 migrations are already loaded in the database.
+[2022-09-16T07:51:02.201Z]2 migrations were found in the source code.
+[2022-09-16T07:51:02.201Z]2 migrations are new migrations that needs to be executed.
+[2022-09-16T07:51:02.201Z][QUERY]: START TRANSACTION
+[2022-09-16T07:51:02.202Z][QUERY]: CREATE TABLE `article` (`id` number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-16T07:51:02.202Z][FAILED QUERY]: CREATE TABLE `article` (`id` number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-16T07:51:02.202Z][QUERY ERROR]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB' at line 1
+[2022-09-16T07:51:02.202Z]Migration "addingArticleMigration1558196824347" failed, error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB' at line 1
+[2022-09-16T07:51:02.202Z][QUERY]: ROLLBACK
+[2022-09-16T07:52:31.021Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-09-16T07:52:31.029Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations` ORDER BY `id` DESC
+[2022-09-16T07:52:31.030Z]0 migrations are already loaded in the database.
+[2022-09-16T07:52:31.030Z]2 migrations were found in the source code.
+[2022-09-16T07:52:31.030Z]2 migrations are new migrations that needs to be executed.
+[2022-09-16T07:52:31.030Z][QUERY]: START TRANSACTION
+[2022-09-16T07:52:31.031Z][QUERY]: CREATE TABLE `article` (`id` Int NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-16T07:52:31.111Z][QUERY]: INSERT INTO `test`.`migrations`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1558196824347,"addingArticleMigration1558196824347"]
+[2022-09-16T07:52:31.115Z]Migration addingArticleMigration1558196824347 has been executed successfully.
+[2022-09-16T07:52:31.116Z][QUERY]: SELECT DATABASE() AS `db_name`
+[2022-09-16T07:52:31.116Z][QUERY]: 
+                        SELECT `TABLE_SCHEMA`,
+                               `TABLE_NAME`
+                        FROM `INFORMATION_SCHEMA`.`TABLES`
+                        WHERE `TABLE_SCHEMA` = 'test'
+                          AND `TABLE_NAME` = 'article'
+                    
+[2022-09-16T07:52:31.119Z][QUERY]: 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'test'
+                    AND
+                    `TABLE_NAME` = 'article'
+                
+[2022-09-16T07:52:31.119Z][QUERY]: SELECT * FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'test'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'article'
+            ) `kcu` WHERE `CONSTRAINT_NAME` = 'PRIMARY'
+[2022-09-16T07:52:31.119Z][QUERY]: 
+            SELECT
+                `SCHEMA_NAME`,
+                `DEFAULT_CHARACTER_SET_NAME` as `CHARSET`,
+                `DEFAULT_COLLATION_NAME` AS `COLLATION`
+            FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+            
+[2022-09-16T07:52:31.119Z][QUERY]: 
+            SELECT
+                `s`.*
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'test'
+                    AND
+                    `TABLE_NAME` = 'article'
+            ) `s`
+            LEFT JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'test'
+                    AND
+                    `TABLE_NAME` = 'article'
+            ) `rc`
+                ON
+                    `s`.`INDEX_NAME` = `rc`.`CONSTRAINT_NAME`
+                    AND
+                    `s`.`TABLE_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA`
+            WHERE
+                `s`.`INDEX_NAME` != 'PRIMARY'
+                AND
+                `rc`.`CONSTRAINT_NAME` IS NULL
+            
+[2022-09-16T07:52:31.119Z][QUERY]: 
+            SELECT
+                `kcu`.`TABLE_SCHEMA`,
+                `kcu`.`TABLE_NAME`,
+                `kcu`.`CONSTRAINT_NAME`,
+                `kcu`.`COLUMN_NAME`,
+                `kcu`.`REFERENCED_TABLE_SCHEMA`,
+                `kcu`.`REFERENCED_TABLE_NAME`,
+                `kcu`.`REFERENCED_COLUMN_NAME`,
+                `rc`.`DELETE_RULE` `ON_DELETE`,
+                `rc`.`UPDATE_RULE` `ON_UPDATE`
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'test'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'article'
+            ) `kcu`
+            INNER JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'test'
+                    AND
+                    `TABLE_NAME` = 'article'
+            ) `rc`
+                ON
+                    `rc`.`CONSTRAINT_SCHEMA` = `kcu`.`CONSTRAINT_SCHEMA`
+                    AND
+                    `rc`.`TABLE_NAME` = `kcu`.`TABLE_NAME`
+                    AND
+                    `rc`.`CONSTRAINT_NAME` = `kcu`.`CONSTRAINT_NAME`
+            
+[2022-09-16T07:52:31.135Z][QUERY]: SELECT VERSION() AS `version`
+[2022-09-16T07:52:31.136Z][QUERY]: ALTER TABLE `article` ADD `rating` number NOT NULL DEFAULT 0
+[2022-09-16T07:52:31.136Z][FAILED QUERY]: ALTER TABLE `article` ADD `rating` number NOT NULL DEFAULT 0
+[2022-09-16T07:52:31.136Z][QUERY ERROR]: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number NOT NULL DEFAULT 0' at line 1
+[2022-09-16T07:52:31.136Z]Migration "addingRatingToArticleMigration1558197348260" failed, error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'number NOT NULL DEFAULT 0' at line 1
+[2022-09-16T07:52:31.137Z][QUERY]: ROLLBACK
+[2022-09-16T07:52:42.848Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-09-16T07:52:42.853Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations` ORDER BY `id` DESC
+[2022-09-16T07:52:42.857Z]1 migrations are already loaded in the database.
+[2022-09-16T07:52:42.857Z]2 migrations were found in the source code.
+[2022-09-16T07:52:42.860Z]addingArticleMigration1558196824347 is the last executed migration. It was executed on Sat May 18 2019 23:27:04 GMT+0700 (Indochina Time).
+[2022-09-16T07:52:42.861Z]1 migrations are new migrations that needs to be executed.
+[2022-09-16T07:52:42.861Z][QUERY]: START TRANSACTION
+[2022-09-16T07:52:42.862Z][QUERY]: SELECT DATABASE() AS `db_name`
+[2022-09-16T07:52:42.863Z][QUERY]: 
+                        SELECT `TABLE_SCHEMA`,
+                               `TABLE_NAME`
+                        FROM `INFORMATION_SCHEMA`.`TABLES`
+                        WHERE `TABLE_SCHEMA` = 'test'
+                          AND `TABLE_NAME` = 'article'
+                    
+[2022-09-16T07:52:42.865Z][QUERY]: 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'test'
+                    AND
+                    `TABLE_NAME` = 'article'
+                
+[2022-09-16T07:52:42.865Z][QUERY]: SELECT * FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'test'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'article'
+            ) `kcu` WHERE `CONSTRAINT_NAME` = 'PRIMARY'
+[2022-09-16T07:52:42.865Z][QUERY]: 
+            SELECT
+                `SCHEMA_NAME`,
+                `DEFAULT_CHARACTER_SET_NAME` as `CHARSET`,
+                `DEFAULT_COLLATION_NAME` AS `COLLATION`
+            FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+            
+[2022-09-16T07:52:42.865Z][QUERY]: 
+            SELECT
+                `s`.*
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'test'
+                    AND
+                    `TABLE_NAME` = 'article'
+            ) `s`
+            LEFT JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'test'
+                    AND
+                    `TABLE_NAME` = 'article'
+            ) `rc`
+                ON
+                    `s`.`INDEX_NAME` = `rc`.`CONSTRAINT_NAME`
+                    AND
+                    `s`.`TABLE_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA`
+            WHERE
+                `s`.`INDEX_NAME` != 'PRIMARY'
+                AND
+                `rc`.`CONSTRAINT_NAME` IS NULL
+            
+[2022-09-16T07:52:42.865Z][QUERY]: 
+            SELECT
+                `kcu`.`TABLE_SCHEMA`,
+                `kcu`.`TABLE_NAME`,
+                `kcu`.`CONSTRAINT_NAME`,
+                `kcu`.`COLUMN_NAME`,
+                `kcu`.`REFERENCED_TABLE_SCHEMA`,
+                `kcu`.`REFERENCED_TABLE_NAME`,
+                `kcu`.`REFERENCED_COLUMN_NAME`,
+                `rc`.`DELETE_RULE` `ON_DELETE`,
+                `rc`.`UPDATE_RULE` `ON_UPDATE`
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'test'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'article'
+            ) `kcu`
+            INNER JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'test'
+                    AND
+                    `TABLE_NAME` = 'article'
+            ) `rc`
+                ON
+                    `rc`.`CONSTRAINT_SCHEMA` = `kcu`.`CONSTRAINT_SCHEMA`
+                    AND
+                    `rc`.`TABLE_NAME` = `kcu`.`TABLE_NAME`
+                    AND
+                    `rc`.`CONSTRAINT_NAME` = `kcu`.`CONSTRAINT_NAME`
+            
+[2022-09-16T07:52:42.873Z][QUERY]: SELECT VERSION() AS `version`
+[2022-09-16T07:52:42.874Z][QUERY]: ALTER TABLE `article` ADD `rating` int NOT NULL DEFAULT 0
+[2022-09-16T07:52:42.893Z][QUERY]: INSERT INTO `test`.`migrations`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1558197348260,"addingRatingToArticleMigration1558197348260"]
+[2022-09-16T07:52:42.896Z]Migration addingRatingToArticleMigration1558197348260 has been executed successfully.
+[2022-09-16T07:52:42.896Z][QUERY]: COMMIT
+[2022-09-20T16:03:08.224Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-09-20T16:03:08.231Z][QUERY]: CREATE TABLE `migrations` (`id` int NOT NULL AUTO_INCREMENT, `timestamp` bigint NOT NULL, `name` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-20T16:03:08.247Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations` ORDER BY `id` DESC
+[2022-09-20T16:03:08.251Z]0 migrations are already loaded in the database.
+[2022-09-20T16:03:08.251Z]1 migrations were found in the source code.
+[2022-09-20T16:03:08.251Z]1 migrations are new migrations that needs to be executed.
+[2022-09-20T16:03:08.252Z][QUERY]: START TRANSACTION
+[2022-09-20T16:03:08.252Z][QUERY]: CREATE TABLE `article` (`id` int NOT NULL AUTO_INCREMENT, `rating` int NOT NULL DEFAULT '0', PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-20T16:03:08.270Z][QUERY]: INSERT INTO `test`.`migrations`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1663689770629,"testAbc1663689770629"]
+[2022-09-20T16:03:08.274Z]Migration testAbc1663689770629 has been executed successfully.
+[2022-09-20T16:03:08.275Z][QUERY]: COMMIT
