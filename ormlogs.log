@@ -281,3 +281,7 @@
 [2022-09-20T16:03:08.270Z][QUERY]: INSERT INTO `test`.`migrations`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1663689770629,"testAbc1663689770629"]
 [2022-09-20T16:03:08.274Z]Migration testAbc1663689770629 has been executed successfully.
 [2022-09-20T16:03:08.275Z][QUERY]: COMMIT
+[2022-09-23T09:05:55.478Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test_migration' AND `TABLE_NAME` = 'migrations'
+[2022-09-23T09:05:55.486Z][QUERY]: CREATE TABLE `migrations` (`id` int NOT NULL AUTO_INCREMENT, `timestamp` bigint NOT NULL, `name` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-09-23T09:05:55.554Z][QUERY]: SELECT * FROM `test_migration`.`migrations` `migrations` ORDER BY `id` DESC
+[2022-09-23T09:05:55.559Z]No migrations are pending
