@@ -12,7 +12,7 @@ const config: ConnectionOptions = {
   migrationsRun: true,
   logging: true,
   logger: 'file',
-  migrations: [__dirname + 'database/migrations/**/*{.ts,.js}'],
+  migrations: [__dirname + '/database/migrations/**/*{.ts,.js}'],
   cli: {
     migrationsDir: 'src/database/migrations',
   },

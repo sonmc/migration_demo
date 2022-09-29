@@ -3,7 +3,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './apps/users/user.module';
 import * as ormconfig from './ormconfig';
 
-
 @Module({
   imports: [
     TypeOrmModule.forRoot(ormconfig),
