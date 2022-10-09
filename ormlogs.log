@@ -306,3 +306,19 @@
 [2022-09-29T07:08:00.159Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test_migration' AND `TABLE_NAME` = 'migrations'
 [2022-09-29T07:08:00.191Z][QUERY]: SELECT * FROM `test_migration`.`migrations` `migrations` ORDER BY `id` DESC
 [2022-09-29T07:08:19.765Z][QUERY]: SELECT `User`.`id` AS `User_id`, `User`.`name` AS `User_name`, `User`.`email` AS `User_email`, `User`.`phoneNumber` AS `User_phoneNumber`, `User`.`password` AS `User_password` FROM `user` `User` WHERE `User`.`id` IN (?) -- PARAMETERS: ["1"]
+[2022-10-09T14:46:11.105Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-10-09T14:46:11.110Z][QUERY]: CREATE TABLE `test`.`migrations` (`id` int NOT NULL AUTO_INCREMENT, `timestamp` bigint NOT NULL, `name` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-10-09T14:46:11.133Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations`
+[2022-10-09T14:52:38.561Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'test' AND `TABLE_NAME` = 'migrations'
+[2022-10-09T14:52:38.566Z][QUERY]: SELECT * FROM `test`.`migrations` `migrations`
+[2022-10-09T14:52:38.567Z]0 migrations are already loaded in the database.
+[2022-10-09T14:52:38.567Z]1 migrations were found in the source code.
+[2022-10-09T14:52:38.567Z]1 migrations are new migrations that needs to be executed.
+[2022-10-09T14:52:38.568Z][QUERY]: START TRANSACTION
+[2022-10-09T14:52:38.568Z][QUERY]: CREATE TABLE `product` (`id` int NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `categoryIdId` int NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-10-09T14:52:38.581Z][QUERY]: CREATE TABLE `category` (`id` int NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-10-09T14:52:38.594Z][QUERY]: CREATE TABLE `user` (`id` int NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `phoneNumber` varchar(255) NOT NULL, `password` varchar(255) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB
+[2022-10-09T14:52:38.605Z][QUERY]: ALTER TABLE `product` ADD CONSTRAINT `FK_b62481426cb6f955ee9a74ffcfe` FOREIGN KEY (`categoryIdId`) REFERENCES `category`(`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+[2022-10-09T14:52:38.642Z][QUERY]: INSERT INTO `test`.`migrations`(`timestamp`, `name`) VALUES (?, ?) -- PARAMETERS: [1665327100673,"abc1665327100673"]
+[2022-10-09T14:52:38.651Z]Migration abc1665327100673 has been executed successfully.
+[2022-10-09T14:52:38.651Z][QUERY]: COMMIT

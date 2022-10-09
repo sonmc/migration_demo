@@ -109,3 +109,8 @@ If everything went well, you have up to date entites and a `migrations` table li
 
 @SeeAlso https://github.com/typeorm/typeorm/blob/master/docs/migrations.md  
 @SeeAlso https://github.com/typeorm/typeorm/blob/master/docs/using-cli.md#notes-on-entity-files-written-in-typescript  
+
+
+run migrations
+npm run typeorm migration:generate -- -n abc
+npm run typeorm typeorm:run
